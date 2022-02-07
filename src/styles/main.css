@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #000000;
+}
+
+.header {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff71;
+  padding: 12px 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header a {
+  margin: 0 15px;
+  padding: 10px;
+  border-bottom: 3px solid #ff000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 50vw;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.header__search input {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  padding: 5px 10px;
+}
+
+.header__search input::-webkit-input-placeholder {
+  color: #ffffffb4;
+}
+
+.header__search input:-ms-input-placeholder {
+  color: #ffffffb4;
+}
+
+.header__search input::-ms-input-placeholder {
+  color: #ffffffb4;
+}
+
+.header__search input::placeholder {
+  color: #ffffffb4;
+}
+
+.header__search svg {
+  fill: white;
+  margin: 0 3px;
+  width: 20px;
+}
+
+.activeLink {
+  color: #ffcc00 !important;
+  border-color: #ffcc00 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .header__search {
+    margin-top: 15px;
+  }
+}
